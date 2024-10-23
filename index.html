@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de veille des réseaux sociaux</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        h1 { text-align: center; margin-top: 20px; }
+        .dashboard { display: flex; justify-content: space-around; margin: 20px; }
+        .card { width: 30%; border: 1px solid #ccc; padding: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        .card h2 { text-align: center; }
+        .card ul { list-style-type: none; padding: 0; }
+        .card ul li { margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Dashboard de Veille des Réseaux Sociaux</h1>
+
+    <div class="dashboard">
+        <div class="card">
+            <h2>Twitter</h2>
+            <ul id="twitter-feed">
+                <!-- Les posts Twitter iront ici -->
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Facebook</h2>
+            <ul id="facebook-feed">
+                <!-- Les posts Facebook iront ici -->
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Instagram</h2>
+            <ul id="instagram-feed">
+                <!-- Les posts Instagram iront ici -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Exemple pour remplir les données avec JavaScript (tu peux remplacer par les vraies API)
+        const twitterFeed = document.getElementById('twitter-feed');
+        twitterFeed.innerHTML = '<li>Nouveau tweet sur le compte X</li>';
+
+        const facebookFeed = document.getElementById('facebook-feed');
+        facebookFeed.innerHTML = '<li>Nouveau post sur la page Y</li>';
+
+        const instagramFeed = document.getElementById('instagram-feed');
+        instagramFeed.innerHTML = '<li>Nouveau post Instagram du compte Z</li>';
+    </script>
+
+</body>
+</html>
